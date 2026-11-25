@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_DB: hemycare
       POSTGRES_USER: hemycare
-      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD não definida}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "127.0.0.1:5432:5432"
     volumes:
